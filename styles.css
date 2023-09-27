@@ -7,7 +7,7 @@
     }
 
 body {
-        max-width:900px;
+        max-width:1050px;
         margin:40px auto;
         padding:0 10px;
         font:18px/1.5 "Charter", -apple-system, "Lato", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -30,3 +30,6 @@ body {
           color:#8e96f0
         }
       }
+
+
+   
