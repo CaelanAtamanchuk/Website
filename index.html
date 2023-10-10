@@ -1,90 +1,82 @@
 <!DOCTYPE html>
 <html>
-    
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1">
-        <title>Caelan Atamanchuk</title>
-        <link rel="icon" type="image/x-icon" href="strawhat.png">
-        <link rel="stylesheet" href="styles.css">
-    
-        <style>
-            .container {
-              display: flex;
-              align-items: center;
-              justify-content: center
-            }
-            img {
-              max-width: 100%
-            }
-            .image {
-              flex-basis: 300%
-            }
-            .text {
-              font-size: 20px;
-              padding-left: 10px;
-            }
-          </style>
 
-    </head>
-    
-    <body>
-    
-        <h1>Caelan Atamanchuk</h1>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <title>Caelan Atamanchuk</title>
+    <link rel="icon" type="image/x-icon" href="strawhat.png">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        img {
+            max-width: 100%
+        }
+
+        .image {
+            flex: 2;
+            max-width: 100%;
+        }
+
+        .text p:nth-of-type(1) {
+            margin-top: 0;
+        }
+
+        .text {
+            flex: 3;
+        }
+
+        @media (max-width: 720px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+<h1>Caelan Atamanchuk</h1>
+
+<p>
+    (This website is a work in progress, I promise it will be done soon.)
+</p>
+
+<div class="container">
+    <div class="image">
+        <img src="rosevalley.JPG" style="width:auto;">
+    </div>
+    <div class="text">
 
         <p>
-          (This website is a work in progress, please don't judge me I'm insecure.)
+            I am a student at McGill University, fishing for a master's in mathematics
+            under the supervision of <a href="http://luc.devroye.org" style="text-decoration:none">Luc Devroye</a>.
+            I am interested in most problems that lie in the intersection of
+            probability and combinatorics. Before coming to cast my line in Montr&eacuteal, I snagged
+            a bachelor's degree at the University of British Columbia's Kelowna
+            campus not too far from my hometown of Kamloops. If I'm not working you should be able
+            to find me in a river somewhere, trying to finally catch a
+            <a href="fishpics.html" style="text-decoration:none">bull trout</a>.
         </p>
-    
-        <div class="container">
-            <div class="image">
-                <img src="rosevalley.JPG":style="width:300px;auto;">
-            </div>
-            <div class="text">
 
-                <p>
-                    I am a student at McGill University, fishing for a master's in mathematics
-                    under the supervision of <a href="http://luc.devroye.org"  style="text-decoration:none">Luc Devroye</a>. 
-                    I am interested in most problems that lie in the intersection of 
-                    probability and combinatorics. Before coming to cast my line in Montr&eacuteal, I snagged
-                    a bachelor's degree at the University of British Columbia's Kelowna
-                    campus not too far from my hometown of Kamloops. If I'm not working you should be able
-                    to find me in a river somewhere, trying to finally catch a <a href="fishpics.html"  style="text-decoration:none">
-                    bull trout</a>.
-                </p>
+        <p>
+            ↬caelan.atamanchuk@gmail.com
+            <br>
+            ↬McConnell Engineering room 311
+        </p>
+    </div>
+</div>
 
-                <p>
-                    ↬caelan.atamanchuk@gmail.com
-                    <br>
-                    ↬McConnell Engineering room 311
-                </p>
-            </div>
-        </div>
+<hr>
 
-        <hr>
-        
-        <h2>Mathematical Scribbles</h2>
-
-        Error 404: Papers not found.
-
-        <hr>
-        
-        <h2>Things That You Can Click</h2>
-
-          <a href="https://oeis.org/"  style="text-decoration:none">Online Encyclopedia of Integer Sequences</a>
-          ●
-          <a href="https://www.genealogy.math.ndsu.nodak.edu/"  style="text-decoration:none">Math Genealogy Project</a>
-        <hr>
-
-        <h2>Friends of the Family</h2>
-
-          <a href="http://luc.devroye.org" style="text-decoration:none">Luc</a>
-          ●
-          <a href="https://opeyadeyemi.com"  style="text-decoration:none">Opey</a>
-          ●
-          <a href="https://antoinegpoulin.github.io/" style="text-decoration:none">Antoine</a>
-
-    </body>
+</body>
 </hmtl>
 
 
