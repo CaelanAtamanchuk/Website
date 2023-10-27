@@ -36,17 +36,29 @@
             div {text-align: center;}
         </style>
 
-        <style>
-            .imgContainer{float:left; display:block;}
-        </style>
-
-        <style>
-               img {
-                    display: block;
-                    margin: auto;
-                    padding: 30px;
-                    }
-         </style>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  .column img {
+    margin-top: 12px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  </style>
 
     </head>
         
@@ -64,79 +76,79 @@
 
         <h3><a href="index.html">Home</a></h3>
 
-        <center>    
-        <table>
-            <tr>
-                <td>
-                    <img src="fishpics/millcreek2023.jpeg" height="500px";width="auto";/>
-                    <p>Mill Creek (2023)</p>                    
-                    <img src="fishpics/clearwaterleft2023.JPEG" height="500px";width="auto";/>
-                    <p>Clearwater River (2023)</p>
-                    <img src="fishpics/someriver2023.JPEG"/ height="500px";width="auto";/>
-                    <p>Columbia River (2023)</p>    
-                    <img src="fishpics/Jackolake2023.JPEG"/ height="500px";width="auto";/>
-                    <p>Jacko Lake (2023)</p>                                    
-                    <img src="fishpics/Bobslake20231.jpg"/ height="500px";width="auto";/>
-                    <p>Bob's Lake (2023)</p>          
-                    <img src="fishpics/millcreek2022.JPEG"/ height="500px";width="auto";/>
-                    <p>Mill Creek (2022)</p>  
-                    
-                    <img src="fishpics/bigwhite2021.jpeg"/ height="500px";width="auto";/>
-                    <p>Big White (2021)</p>
-                    <img src="fishpics/ospreylake2021.JPEG"/ height="500px";width="auto";/>
-                    <p>Osprey Lake (2021)</p>
-                    <img src="fishpics/kootenayriver2021.JPG"/ height="500px";width="auto";/>
-                    <p>Kootenay River (2021)</p>
-                    <img src="fishpics/garnetlake2021.JPG"/ height="500px";width="auto";/>
-                    <p>Garnet Lake (2021)</p>
-                    <img src="fishpics/rosevalleyup2020.jpeg"/ height="500px";width="auto";/>
-                    <p>Rose Valley (2020)</p>   
-                    <img src="fishpics/powerscreeklittle2020.JPG"/ height="500px";width="auto";/>
-                    <p>Powers Creek (2020)</p>  
-                    <img src="fishpics/stmarysriver2020.JPG"/ height="500px";width="auto";/>
-                    <p>St. Mary's River (2020)</p>  
-                    <img src="fishpics/powerscreek2020.jpeg"/ height="500px";width="auto";/>
-                    <p>Powers Creek (2020)</p>  
-                    <img src="fishpics/powerscreekwinter2020.JPG"/ height="500px";width="auto";/>
-                    <p>Powers Creek (2020)</p>                                                                                                                                                                                
-                  </td>
-                
-                <td>
-                    <img src="fishpics/Missioncreek2023.JPEG" height="500px";width="auto";/>
-                    <p>Mission Creek (2023)</p>
-                    <img src="fishpics/clearwaterright2023.JPEG" height="500px";width="auto";/>
-                    <p>Clearwater River (2023)</p>                    
-                    <img src="fishpics/skookcut2023.jpeg"/ height="500px";width="auto";/>
-                    <p>Skookumchuk River (2023)</p>
-                    <img src="fishpics/bearcreek2023.jpeg"/ height="500px";width="auto";/>
-                    <p>Bear Creek (2023)</p>
-                    <img src="fishpics/Bobslake20232.jpg"/ height="500px";width="auto";/>
-                    <p>Bob's Lake (2023)</p>
-                    <img src="fishpics/powerscreek2022.JPEG"/ height="500px";width="auto";/>
-                    <p>Powers Creek (2022)</p>
-                    
-                    <img src="fishpics/bigwhite20212.jpeg"/ height="500px";width="auto";/>
-                    <p>Big White (2021)</p>
-                    <img src="fishpics/woodlake2021.jpeg"/ height="500px";width="auto";/>
-                    <p>Wood Lake (2021)</p>
-                    <img src="fishpics/cherrycreek2021.JPG"/ height="500px";width="auto";/>
-                    <p>Cherry Creek (2021)</p>
-                    <img src="fishpics/Bobsslakewinter2021.jpeg"/ height="500px";width="auto";/>
-                    <p>Bob's Lake (2021)</p>
-                    <img src="fishpics/rosevalleyfall2020.jpeg"/ height="500px";width="auto";/>
-                    <p>Rose Valley (2020)</p>   
-                    <img src="fishpics/thompsonriver2020.JPG"/ height="500px";width="auto";/>
-                    <p>Thompson River (2020)</p>  
-                    <img src="fishpics/stmarysrivertwo2020.JPG"/ height="500px";width="auto";/>
-                    <p>St. Mary's River (2020)</p>  
-                    <img src="fishpics/powerscreek2020.JPG"/ height="500px";width="auto";/>
-                    <p>Rose Valley (2020)</p>    
-                    <img src="fishpics/shannonlake2020.JPG"/ height="500px";width="auto";/>
-                    <p>Shannon Lake (2020)</p>                                                                                                                      
-                  </td>
-            </tr>
-        </table>
-        </center>
+        <div class="row">
+        
+        <div class="column">
+
+          <img src="fishpics/millcreek2023.jpeg"/>
+          <p>Mill Creek (2023)</p>                    
+          <img src="fishpics/clearwaterleft2023.JPEG"/>
+          <p>Clearwater River (2023)</p>
+          <img src="fishpics/someriver2023.JPEG"/>
+          <p>Columbia River (2023)</p>    
+          <img src="fishpics/Jackolake2023.JPEG"/>
+          <p>Jacko Lake (2023)</p>                                    
+          <img src="fishpics/Bobslake20231.jpg"/>
+          <p>Bob's Lake (2023)</p>          
+          <img src="fishpics/millcreek2022.JPEG"/>
+          <p>Mill Creek (2022)</p>  
+          <img src="fishpics/bigwhite2021.jpeg"/>
+          <p>Big White (2021)</p>
+          <img src="fishpics/ospreylake2021.JPEG"/>
+          <p>Osprey Lake (2021)</p>
+          <img src="fishpics/kootenayriver2021.JPG"/>
+          <p>Kootenay River (2021)</p>
+          <img src="fishpics/garnetlake2021.JPG"/>
+          <p>Garnet Lake (2021)</p>
+          <img src="fishpics/rosevalleyup2020.jpeg"/>
+          <p>Rose Valley (2020)</p>   
+          <img src="fishpics/powerscreeklittle2020.JPG"/>
+          <p>Powers Creek (2020)</p>  
+          <img src="fishpics/stmarysriver2020.JPG"/>
+          <p>St. Mary's River (2020)</p>  
+          <img src="fishpics/powerscreek2020.jpeg"/>
+          <p>Powers Creek (2020)</p>  
+          <img src="fishpics/powerscreekwinter2020.JPG"/>
+          <p>Powers Creek (2020)</p>           
+
+        </div>
+
+        <div class="column">
+
+          <img src="fishpics/Missioncreek2023.JPEG" />
+          <p>Mission Creek (2023)</p>
+          <img src="fishpics/clearwaterright2023.JPEG" />
+          <p>Clearwater River (2023)</p>                    
+          <img src="fishpics/skookcut2023.jpeg"/>
+          <p>Skookumchuk River (2023)</p>
+          <img src="fishpics/bearcreek2023.jpeg"/>
+          <p>Bear Creek (2023)</p>
+          <img src="fishpics/Bobslake20232.jpg"/>
+          <p>Bob's Lake (2023)</p>
+          <img src="fishpics/powerscreek2022.JPEG"/>
+          <p>Powers Creek (2022)</p>
+          <img src="fishpics/bigwhite20212.jpeg"/>
+          <p>Big White (2021)</p>
+          <img src="fishpics/woodlake2021.jpeg"/>
+          <p>Wood Lake (2021)</p>
+          <img src="fishpics/cherrycreek2021.JPG"/>
+          <p>Cherry Creek (2021)</p>
+          <img src="fishpics/Bobsslakewinter2021.jpeg"/>
+          <p>Bob's Lake (2021)</p>
+          <img src="fishpics/rosevalleyfall2020.jpeg"/>
+          <p>Rose Valley (2020)</p>   
+          <img src="fishpics/thompsonriver2020.JPG"/>
+          <p>Thompson River (2020)</p>  
+          <img src="fishpics/stmarysrivertwo2020.JPG"/>
+          <p>St. Mary's River (2020)</p>  
+          <img src="fishpics/powerscreek2020.JPG"/>
+          <p>Rose Valley (2020)</p>    
+          <img src="fishpics/shannonlake2020.JPG"/>
+          <p>Shannon Lake (2020)</p>     
+      
+        </div>
+
+        </div>
         
         <h3><a href="index.html">Home</a></h3>
 
