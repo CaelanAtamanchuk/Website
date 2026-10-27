@@ -71,10 +71,26 @@ details {
 
 details > summary {
     cursor: pointer;
-    list-style-position: inside;
-    max-width: 100%;
-    box-sizing: border-box;
-    overflow-wrap: anywhere;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details > summary::before {
+    content: "▶";
+    display: inline-block;
+    font-size: 0.7em;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
+
+details[open] > summary::before {
+    transform: rotate(90deg);
 }
 
 details > summary h2 {
