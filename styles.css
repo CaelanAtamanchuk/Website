@@ -64,16 +64,21 @@ Added to make the linkedin and google scholar links
 Added to make the publications a drop down menu
 */
 
-details > summary {
-    cursor: pointer;
-    list-style: disclosure-closed;
+details {
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
-details[open] > summary {
-    list-style: disclosure-open;
+details > summary {
+    cursor: pointer;
+    list-style-position: inside;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
 }
 
 details > summary h2 {
     display: inline;
     margin: 0;
+    font-size: inherit;
 }
